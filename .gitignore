@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables (Never upload secrets/keys)
+.env
+.env*
+*.env
+*.env.*
+backend/.env*
+frontend/.env*
+
+# Production builds
+dist/
+build/
+frontend/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Uploads & temporary media files
+uploads/
+backend/uploads/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

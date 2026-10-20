@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-mern-project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "abhishek",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "server": "nodemon backend/index.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "@imagekit/nodejs": "^7.11.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.3",
+    "multer": "^2.2.0",
+    "nodemailer": "^9.0.5",
+    "razorpay": "^2.9.8"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14"
+  }
+}
